@@ -2,6 +2,7 @@ body {
   font-family: Cormorant, serif;
 }
 
+/* #region header */
 h1 {
   display: inline-block;
   font-weight: 300;
@@ -34,7 +35,9 @@ a.active {
 .navbar {
   margin: 32px;
 }
+/* #endregion */
 
+/* #region gallery */
 .gallery {
   padding: 16px;
 }
@@ -58,6 +61,12 @@ a.active {
   font-weight: 300;
 }
 
+.card img:hover {
+  opacity: 0.9;
+}
+/* #endregion */
+
+/* #region footer */
 .about {
   width: 40%;
   min-width: 600px;
@@ -84,7 +93,29 @@ a.active {
   padding-bottom: 8px;
   margin-top: 0;
 }
+/* #endregion */
 
-.card img:hover {
-  opacity: 0.9;
+@media only screen and (max-width: 1000px) {
+  .card {
+    width: 100%;
+  }
+
+  .about {
+    margin: 100px 0 100px 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    padding: 0;
+  }
+
+  .gallery {
+    padding: 8px;
+  }
+
+  .about {
+    margin: 100px auto;
+    min-width: 400px;
+  }
 }
